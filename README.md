@@ -1,6 +1,8 @@
 # restapi
 
-This API should support 
+#This API must have 4 endpoints and support the follow methods.
+#Only logged users can acess protected rows.
+
 /products
     - GET / POST 
 
@@ -12,5 +14,3 @@ This API should support
 
 /orders/{id}
     - GET / DELETE
-
-Only logged users can acess protected rows.
