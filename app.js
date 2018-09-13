@@ -6,6 +6,10 @@ const mongoose = require ('mongoose');
 const productRoutes = require ('./api/routes/products')
 const ordersRoutes = require ('./api/routes/orders')
 
+mongoose.connect('mongodb+srv://bido:'+ process.env.MONGO +'@node-rest-shop-9mtph.mongodb.net/test?retryWrites=true',{
+    useNewUrlParser: true
+});
+
 app.use(morgan('dev'));
 //Handling body-parser, since express v4.16.*. It's already included by default.
 app.use(express.urlencoded({extended: false}));
